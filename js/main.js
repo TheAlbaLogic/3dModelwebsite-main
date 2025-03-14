@@ -79,11 +79,11 @@ function animate(){
     //Here we could add some code to update the scene, adding some automatic movement
 
     //make the eye move
-    if (object && objToRender === "eye"){
+    // if (object && objToRender === "eye"){
         //play with constraints to look good
-        object.rotation.y = -3 + mouseX / window.innerWidth * 3;
-        object.rotation.x = -1.2 + mouseY * 2.5 / window.innerHeight;
-    }
+        // object.rotation.y = -3 + mouseX / window.innerWidth * 3;
+        // object.rotation.x = -1.2 + mouseY * 2.5 / window.innerHeight;
+    // }
     renderer.render(scene, camera);
 }
 
@@ -95,10 +95,10 @@ window.addEventListener("resize",function(){
 });
 
 //add mouse position listener, so we can make the eye move 
-document.onmousemove = (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-}
+// document.onmousemove = (e) => {
+//     mouseX = e.clientX;
+//     mouseY = e.clientY;
+// }
 
 //start the 3d rendering
 animate();
