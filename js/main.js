@@ -22,7 +22,7 @@ let object;
 let controls;
 
 //set which object to render
-let objToRender = 'tank';
+let objToRender = 'T34';
 
 //Instantiate a loader for the .GLTF file 
 const loader = new GLTFLoader();
@@ -56,7 +56,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.getElementById("container3D").appendChild(renderer.domElement);
 
 //Set how far the camera will be from the 3D model
-camera.position.z = objToRender === "tank" ? 25 : 500;
+camera.position.z = objToRender === "T34" ? 25 : 500;
 
 // Add lights to the scene, so we can actually see the 3d model
 const topLight = new THREE.DirectionalLight(0xffffff, 1); // (colour, intensity)
@@ -64,12 +64,12 @@ topLight.position.set(500,500,500) //top-left-ish
 topLight.castShadow = true; 
 scene.add(topLight);
 
-const ambientLight = new THREE.AmbientLight(0x333333, objToRender === "tank" ? 5 : 1);
+const ambientLight = new THREE.AmbientLight(0x333333, objToRender === "T34" ? 5 : 1);
 scene.add(ambientLight);
 
 //This adds controls to the camera so we can rotate/ zoom it with the mouse
 
-if ( objToRender === "tank") { 
+if ( objToRender === "T34") { 
     controls = new OrbitControls(camera, renderer.domElement);
 }
 
@@ -102,3 +102,4 @@ window.addEventListener("resize",function(){
 
 //start the 3d rendering
 animate();
+
