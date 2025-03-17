@@ -10,6 +10,8 @@ header{
     margin-top: 3em;
     text-align: center;
     color: white;
+    display: flex;
+    justify-content: space-evenly;
 }
 
  h1{
@@ -57,6 +59,8 @@ ul {
     line-height: 60px;
     display: inline-block;
     align-items: center;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 
 
