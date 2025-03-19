@@ -93,13 +93,17 @@ ul {
 }
 
 .map{
-    max-width: 60%;
+    max-width: 100%;
 
 
 }
 
+
+
+
+
 .bptext{
-    width: 35%;
+    width: 30%;
     text-align: left;
     line-height: 1.5;
 }
