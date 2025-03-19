@@ -74,7 +74,6 @@ ul {
 
 .footer-content,.footer-links,.page-footer{
     padding-left: 4rem;
-    text-align: center;
     display: flex;
     flex-direction: row;
 }
