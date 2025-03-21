@@ -67,11 +67,6 @@ ul {
     padding-left: 2rem;
   }
 
-
-/* .content{
-
-} */
-
 .content-selection{
     display: flex;
     flex-direction: column;
@@ -95,10 +90,7 @@ ul {
 .map{
     max-width: 100%;
 
-
 }
-
-
 
 
 .bptext{
