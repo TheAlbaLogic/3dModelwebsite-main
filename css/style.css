@@ -2,7 +2,7 @@ body{
 
     margin: 0; 
     font-family: 'Courier New', Courier, monospace;
-    background-color: white;
+    background-color: #807E69;
   
    
 }
@@ -48,8 +48,18 @@ h2{
 
 .page-navigation{
     display: flex;
+    justify-content: space-between;
     align-self: center;
+    border: 1px solid black;
+    margin-bottom: 3%;
 
+}
+
+.navigation-list{
+
+  display: flex;
+  justify-content:space-around;
+  padding-right: 2rem;
 }
 
 ul {
@@ -65,6 +75,17 @@ ul {
     align-items: center;
     padding-right: 2rem;
     padding-left: 2rem;
+  }
+
+  a{
+    color: black;
+    font-size: large;
+    text-decoration: none;
+  }
+
+  a:hover{
+
+    color: #064789;
   }
 
 .content-selection{
@@ -86,18 +107,22 @@ ul {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 2rem;
+    
+    
 }
 
-.map{
-    max-width: 100%;
+ .map{
+  display: flex;
+   justify-content: left;
 
-}
+} 
 
 
 .bptext{
     width: 30%;
-    text-align: left;
-    line-height: 1.5;
+    text-align: center;
+    line-height: 2;
+    padding-left: 5rem;
 }
 .page-footer{
 
@@ -106,6 +131,8 @@ ul {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
+    background-color: #e8f7ee;
+    
     
 }
 
@@ -159,7 +186,7 @@ ul {
 
 .parallax{
     background-color: #e8f7ee;
-    min-height: 300px;
+    min-height: 100px;
 
 }
 
@@ -199,7 +226,7 @@ ul {
     left: 10rem;
     height: 100rem;
  
-    background-color: white;
+    background-color: #807E69;
   }
   .parallax-layer.layer3 {
     top: 30rem;
@@ -209,79 +236,142 @@ ul {
 
   }
 
-.Ttext{
-    justify-content: right;
-    margin-left: 70%;
-}
-.Ltext{
-    justify-content: left;
-    margin-left: 25;
-    margin-right: 75%;
-}
-
-  
-  .scroll-indicator {
-    position: fixed;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-    color: white;
-    text-align: center;
-    animation: fadeInOut 2s ease-in-out infinite;
-  }
-  
-  .mouse {
-    width: 26px;
-    height: 40px;
-    border: 2px solid white;
-    border-radius: 20px;
-    margin: 0 auto 10px;
-    position: relative;
-  }
-  
-  .wheel {
-    width: 4px;
-    height: 8px;
-    background: white;
+  .Ttext {
     position: absolute;
-    top: 7px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 4px;
-    animation: scroll 1.5s ease infinite;
-  }
-  
-  @keyframes scroll {
-    0% {
-      transform: translateX(-50%) translateY(0);
-      opacity: 1;
-    }
-    100% {
-      transform: translateX(-50%) translateY(15px);
-      opacity: 0;
-    }
-  }
-  
-  @keyframes fadeInOut {
-    0%, 100% {
-      opacity: 0.3;
-    }
-    50% {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes drift {
-    0% {
-      transform: translateX(0) translateY(0);
-    }
-    50% {
-      transform: translateX(5%) translateY(-10%);
-    }
-    100% {
-      transform: translateX(0) translateY(0);
-    }
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30%;
+    text-align: left;
+    padding-left: 20px;
+    line-height: 1.5rem;
+}
+
+.Ltext {
+    position: absolute;
+    left: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30%;
+    text-align: left;
+    padding-right: 20px;
+    line-height: 1.5rem;
+}
+
+.Rtext{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  padding-right: 10%;
+}
+
+  .TankFootage{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5rem;
+
   }
 
+  .video{
+
+    display: flex;
+    justify-content: left;
+    margin-right: 5rem;
+    margin-left: 10%;
+    width: 100%;
+
+
+  }
   
+
+  @media only screen and (max-width: 600px) {
+    header {
+      flex-direction: column;
+      margin-top: 1.5em;
+  }
+  
+  h1, h2 {
+      font-size: 1.5em;
+  }
+  
+  #container3D canvas {
+      width: 90vw !important;
+      height: 40vh !important;
+  }
+  
+  .page-navigation {
+      width: 100%;
+      overflow-x: auto;
+  }
+  
+  ul {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  
+  li {
+      font-size: 14px;
+      padding: 0 0.5rem;
+      margin: 0 5px;
+      line-height: 40px;
+  }
+  
+  .tank-container {
+      width: 90%;
+      flex-direction: column;
+  }
+  
+  .map {
+      justify-content: center;
+      width: 100%;
+      overflow-x: auto;
+  }
+  
+  .bptext {
+      width: 90%;
+      padding-left: 0;
+      margin: 1rem auto;
+  }
+  
+  .page-footer {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .footer-content {
+      flex-direction: column;
+      width: 100%;
+  }
+  
+  .btn {
+      margin: 1rem;
+  }
+  
+  .parallax-layer.layer2 {
+      width: 95%;
+      left: 2.5%;
+  }
+  
+  .Ttext, .Ltext {
+      margin-left: 5%;
+      margin-right: 5%;
+  }
+  
+  .Rtext {
+      width: 90%;
+      padding-right: 5%;
+      padding-left: 5%;
+  }
+  
+  .TankFootage {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .video {
+      margin-right: 0;
+      margin-left: 0;
+      justify-content: center;
+  }
+  }
