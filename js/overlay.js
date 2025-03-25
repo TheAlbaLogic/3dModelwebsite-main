@@ -1,7 +1,9 @@
-function on() {
-    document.getElementById("overlay").style.display = "block";
-}
-
-function off() {
-    document.getElementById("overlay").style.display = "none";
-}
+/* Open */
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+  }
+  
+  /* Close */
+  function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+  }

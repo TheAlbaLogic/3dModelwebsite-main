@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>USA</title>
 
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <script type="module" src="js/M4Sherman.js"></script>
+  <script type="script" src="js/overlay.js"></script>
 
 </head>
 
@@ -15,98 +16,146 @@
   <header class="page-header">
     <div class="header-content">
 
-      <nav class="page-navigation">
-        <ul class="navigation-list">
+      <div id="myNav" class="overlay">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <div class="overlay-content">
+
           <li><a href="index.html">Home</a></li>
           <li><a href="Germany.html">Germany</a></li>
           <li><a href="uk.html">UK</a></li>
           <li><a href="usa.html">USA</a></li>
           <li><a href="ussr.html">USSR</a></li>
-          
-        </ul>
-      </nav>
+
     </div>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+  </div>
   </header>
 
+  
+              
   <div id="container3D"><h1>Move me</h1></div>
+  
+    
 
-  <div class="contetnt-selection">
+  <section class="content">
+
+  <section class="content-selection">
 
     
 
-    <h2>Interwar</h2>
+    
 
-    <p> During this period the americans tested and designed many different types of tanks but all of them were either used and updated later to become offically WW2
-      Tanks or were never mass produced as they were outdated.
-    </p>
+    <h2>Tiger Tank Specifications  </h2>
+
+    <div class="tank-container">
+
+    <img src="images/M4Sherman .png" alt="Tiger Tank" usemap="#blueprint" class="map" width="650" height="380">
 
 
+  
+
+
+    <map name="blueprint">
+
+      <area shape="rect" coords="10,70,175,140" alt="Barrel" href="pages/M4/M4Barrel.html"  >
+      <area shape="rect" coords="40,200,645,345" alt="Tracks" href="pages/M4/M4Tracks.html">
+      <area shape="rect" coords="200,100,645,245" alt="Chassis" href="pages/M4/M4Chassis.html">
+      <area shape="rect" coords="50,180,250,245" alt="MG and small cannons" href="pages/M4/M4MG.html">
+
+
+    </map>
+      
+    <p class="bptext"> This is a interactive blueprint for you to learn more about the specifics of the Tiger Tank</p>
+    </div>
+  </section>
+
+  <div class="parallax"></div>
+  <section id="container"> 
+
+
+    <div class="parallax-layer layer1">
+      
+
+      <p class="Ltext"> The Battle of Kursk in 1943, the largest tank battle in history, is one of the most famous engagements involving the iconic Tiger I tank. Fought between Nazi Germany and the Soviet Union, this epic clash occurred from July 5 to August 23. The Germans launched Operation Citadel, aiming to crush the Soviet forces in the Kursk salient. The Tiger I, with its powerful 88mm gun and thick armor, played a key role in the battle, particularly during the Battle of Prokhorovka on July 12.
+
+        At Prokhorovka, over 1,500 tanks collided in one of the largest tank engagements ever. German Tigers, with their long-range firepower, tore through Soviet T-34s, but the Soviets’ well-prepared defenses, along with overwhelming numbers, proved a formidable challenge. Despite their initial success, German forces struggled with logistical issues, mechanical breakdowns, and fierce Soviet counterattacks, causing their advance to stall.</p>
+
+        
+      <p class="Ttext">By the end, the Germans failed to break through, marking a decisive Soviet victory. The Tiger I, despite its fearsome reputation, couldn't turn the tide. The Battle of Kursk is seen as a turning point, marking the beginning of the end for Germany on the Eastern Front.
+
+        Key Figures:
+        
+        Over 200 Tiger I tanks deployed by the Germans.
+        
+        Around 5,000 Soviet tanks, including T-34s.
+        
+        1,500 tanks clashed at Prokhorovka.
+        
+        Kursk highlighted both the power and limitations of the Tiger I, solidifying its legacy but showing that firepower alone couldn't win the war.</p>
 
     </div>
 
-
-    <div class="contetnt-selection">
-
-
     
 
-    
-
-
-    <h2>WW2</h2>
-
-    <p>
-      The M3 Stuart was a light tank used by the US and other Allied forces during World War II. It was also used by several countries in the post-war period. </p>
-
-    <p>
-      The M24 Chaffee was a light tank used by the United States and its allies during World War II and the Korean War. It was notable for its speed and mobility. </p>
-
-    <p>
-      The M4 Sherman was a widely used American tank in World War II.
-       It was reliable and effective against German tanks but lacked protection and firepower in later stages of the war. </p>
-
-    <p>
-      The M26 Pershing was an American heavy tank introduced in the final stages of World War II.
-       It was designed to counter German heavy tanks and saw limited service in the Korean War. </p>
-
-
-    </div>
-
-
-    <div class="contetnt-selection">
-    
-
-    <h2>Cold War/ Modern</h2>
-
-    <p> The M60 Patton was an American main battle tank that served from the 1960s through the 1990s.
-       It featured a 105mm main gun, composite armor, and a powerful engine.</p>
-
-    <p> 
-      The M1 Abrams is a third-generation American main battle tank. It is highly mobile, 
-      heavily armored, and equipped with a powerful 120 mm smoothbore gun. It has served in numerous conflicts since the 1980s. </p>
-
+    <img class="parallax-layer layer3" src="images/M4ShermanFront.png" alt="Front facing tiger">
 
     
-      </div>
-
 
 
 
   </section>
+  <div class="parallax"></div>
+
+  <section class="TankFootage">
 
 
-  <footer class="page-footer">
-    <div class="footer-content">
-      <a href="#top">Back to the Top</a>
+    <iframe width="600" height="400"class="video"
+      src="https://www.youtube.com/embed/Hrmr2x0t3Vg?si=tzsjVZWow8PYbrub&t=610">
+    </iframe>
 
-      <p>Art Of Armour &copy;2023</p>
+    <p class="Rtext"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+      fugiat nulla pariatur. 
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 
-      <ul class="footer-links">
-        <li><a href="#"> Privacy Policy</a></li>
-        <li><a href="#"> Site Map</a></li>
-      </ul>
-    </div>
-  </footer>
+  </section>
+
+</body>
+<footer class="page-footer">
+  <div class="footer-content">
+   
+
+ 
+
+    <ul class="footer-links">
+
+       <li><a class="links" href="#"> Sitemap </a></li>
+       <li><a class="links" href="#"> Contact us </a></li>
+       <li><a class="links" href="pages/credits.html"> Credits </a></li>
+      <li><a class="links" href="pages/History.html"> History of Tanks </a></li>
+    </ul>
+  </div>
+</footer>
+</section>
+
+<script>
+
+
+/* Open */
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+  }
+  
+  /* Close */
+  function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+  }
+
+</script>
+
 </body>
 
 </html>
