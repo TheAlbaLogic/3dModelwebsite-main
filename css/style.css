@@ -159,10 +159,15 @@ ul {
 
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     
 }
 
-
+.footer-links{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
 
 
 .btn{
@@ -279,12 +284,29 @@ ul {
     line-height: 2rem;
 }
 
+.Rheader{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  padding-right: 6%;
+}
+
 .Rtext{
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 60%;
+  width: 100%;
   padding-right: 6%;
+  line-height: 1.5rem;
+}
+
+.textpos{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin-right: 10%;
 }
 
   .TankFootage{
@@ -301,6 +323,7 @@ ul {
     margin-right: 5rem;
     margin-left: 10%;
     width: 100%;
+    margin-top: 10%;
 
 
   }
