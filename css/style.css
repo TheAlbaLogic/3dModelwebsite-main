@@ -1,8 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono:wght@300;400&display=swap');
+
+:root {
+  --bg-color: #1a1a2e;
+  --text-color: #e0e0e0;
+  --accent-color: #4a4e69;
+}
+
 body{
 
     margin: 0; 
-    font-family: 'Courier New', Courier, monospace;
-    background-image: linear-gradient(#767676,#c8c8c8);
+    font-family: 'Roboto Mono', monospace;
+    background: linear-gradient(135deg, var(--bg-color), #16213e);
+    color: var(--text-color);
+    overflow-x: hidden;
   
    
 }
@@ -23,6 +34,7 @@ header{
     font-size: 2em;
     font-weight: 900;
     text-align: center;
+    
 }
 
 h2{
@@ -253,7 +265,7 @@ ul {
     width: 25%;
     text-align: left;
     padding-left: 20px;
-    line-height: 1.5rem;
+    line-height: 2rem;
 }
 
 .Ltext {
@@ -264,7 +276,7 @@ ul {
     width: 25%;
     text-align: left;
     padding-right: 20px;
-    line-height: 1.5rem;
+    line-height: 2rem;
 }
 
 .Rtext{
@@ -303,6 +315,7 @@ ul {
     background-color: rgba(0,0,0,0.9);
     overflow-x: hidden;
     transition: 0.5s;
+
   }
 
   .overlay-content {
