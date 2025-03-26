@@ -8,6 +8,7 @@
 
   <link rel="stylesheet" href="css/style.css">
   <script type="module" src="js/T34.js"></script>
+  <script src="js/overlay.js"></script>
 
 </head>
 
@@ -15,17 +16,22 @@
   <header class="page-header">
     <div class="header-content">
 
-      <nav class="page-navigation">
-        <ul class="navigation-list">
+      <div id="myNav" class="overlay">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <div class="overlay-content">
+          <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="Germany.html">Germany</a></li>
           <li><a href="uk.html">UK</a></li>
           <li><a href="usa.html">USA</a></li>
           <li><a href="ussr.html">USSR</a></li>
-          
         </ul>
-      </nav>
     </div>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+  </div>
   </header>
 
  
