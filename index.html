@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     
     <script src="js/overlay.js"></script>
+    <script src="js/carousel.js"></script>
  </head>
  <body id="top">
   <header class="page-header">
@@ -29,14 +30,59 @@
         </ul>
     </div>
     </div>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+    <span class="menu"  style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
   </div>
   </header>
 
-  <div class="carousel">
+  <div class="carousel-container">
+
+    <div class="SlidesFade">
+      <div class="numbertext">
+        1 / 4 
+      </div>
+
+      <img src="images/CromwellTracks.png" style="width: 100%;">
+      <div class="caption">Caption</div>
+
+    </div>
+    <div class="SlidesFade">
+      <div class="numbertext">
+        2 / 4 
+      </div>
+
+      <img src="images/T34.png" style="width: 100%;">
+      <div class="caption">Caption</div>
+
+    </div>
+    <div class="SlidesFade">
+      <div class="numbertext">
+        3 / 4 
+      </div>
+
+      <img src="images/Tiger.png" style="width: 100%;">
+      <div class="caption">Caption</div>
+
+    </div>
+    <div class="SlidesFade">
+      <div class="numbertext">
+        4 / 4 
+      </div>
+
+      <img src="images/M4Sherman .png" style="width: 100%;">
+      <div class="caption">Caption</div>
+
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
 
+  </div>
 
+  <div class="dots">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
   </div>
               
 
