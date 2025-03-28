@@ -385,6 +385,16 @@ ul {
     position: relative;
     margin: auto;
     max-height: 60%;
+    top: 3rem;
+  }
+
+  .caroimg{
+    top: 2rem;
+    max-width: 800px;
+    max-height: 400px;
+    display: flex;
+    justify-content: center;
+    
   }
 
   .SlidesFade{
