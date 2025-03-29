@@ -9,8 +9,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="css/style.css">
     
-    <script src="js/overlay.js"></script>
-    <script src="js/carousel.js"></script>
+
  </head>
  <body id="top">
   <header class="page-header">
@@ -87,8 +86,8 @@
   </div>
               
 
-    <div class="parallax"></div>
-    <section class="contetnt-selection">
+    
+    <section class="compDesc">
   
       <h1> What we do!</h1>
 
@@ -103,6 +102,66 @@
     </section>
   
   
+    <div class="parallax"></div>
+
+    <div class="description">
+      <div>
+      <h1></h1>
+        <p>
+         </p>
+      </div>
+          <div class="scroll-down"><div class="arrow"></div></div>
+    </div>
+    
+    <div class="container">
+      
+      <div class="panel blue">
+        
+      </div>
+      
+      <section class="panel red">
+        <div>
+        <pre class="code-block prettyprint lang-js linenums">
+        </div>
+        <div class="box-1"></div>
+      </section>
+      
+      <section class="panel gray">
+        <div>
+        <pre class="code-block prettyprint lang-js linenums">
+    </div>
+        <div class="box-2 "></div>
+      </section>
+      <section class="panel purple">
+        <div>
+        <pre class="code-block prettyprint lang-js linenums">
+        </div>
+        <div class="box-3"></div>
+      </section>
+      <section class="panel green">
+        <div>
+          
+      <div id="tank" class="tank">
+        <img src="images/Tiger.png" alt="Tiger Tank" width="800px" height="600px">
+       </div>
+        </div>
+      </section>
+
+    </div>
+    
+    <div class="final">
+      <div>
+        <h1>Wasn't that fun?</h1>
+        <p>Here are a few caveats to keep in mind:</p>
+        <ul>
+          <li>The fake-scrolling animation (just the part that's moving the container horizontally) must have no easing (<code>ease: "none"</code>).</li>
+          <li>Pinning and snapping won't work on ScrollTriggers with a <code>containerAnimation</code>.</li>
+          <li>The mapping of scroll position trigger points are based on the trigger element itself not being animated horizontally (inside the container). If you need to animate the trigger, you can either wrap it in a &lt;div&gt; and use that as the trigger instead or just factor the trigger's movement into your end position. For example, if you animate it left 100px, make the <code>end</code> 100px further to the left.</li>
+          <li>Requires ScrollTrigger 3.8.0 or later</li>
+        </ul>
+      </div>
+    </div>
+
 
   </body>
   <footer class="page-footer">
@@ -120,4 +179,10 @@
       </ul>
     </div>
   </footer>
+
+  <script src="js/overlay.js"></script>
+  <script src="js/carousel.js"></script>
+  <script type="module" src="js/parallax.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
   </html>
