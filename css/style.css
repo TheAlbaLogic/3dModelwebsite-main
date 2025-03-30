@@ -153,19 +153,22 @@ ul {
     padding-left: 5rem;
 }
 .page-footer{
-
-    margin-top: 3rem;
+  
+    
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     text-align: center;
     background-color: #e8f7ee;
+    bottom: 0;
+    flex-shrink: 0; /* Prevents the footer from shrinking */
+    margin-top: auto;
     
     
 }
 
 .footer-content{
-
+    
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -314,16 +317,18 @@ ul {
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 100%;
+  width: 75%;
   padding-right: 6%;
-  line-height: 1.5rem;
+  line-height: 2rem;
+  margin: 0 auto;
+  overflow-wrap: break-word ;
 }
 
 .textpos{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 80%;
+  width: 50%;
   margin-right: 10%;
 }
 
@@ -331,17 +336,18 @@ ul {
     display: flex;
     justify-content: space-evenly;
     padding-top: 5rem;
-
+    padding-bottom: 2rem;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 2rem;
   }
 
   .video{
 
     display: flex;
-    justify-content: left;
-    margin-right: 5rem;
-    margin-left: 10%;
-    width: 100%;
-    margin-top: 10%;
+    justify-content: center;
+    max-width: 100%;
+    margin-top: 10% auto 0;
 
 
   }
@@ -654,11 +660,13 @@ ul {
       width: 90%;
       padding-right: 5%;
       padding-left: 5%;
+      margin: 0 auto;
   }
   
   .TankFootage {
       flex-direction: column;
       align-items: center;
+      padding-top: 2rem;
   }
   
   .video {

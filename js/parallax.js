@@ -11,14 +11,18 @@ gsap.registerPlugin(ScrollTrigger);
 
 let sections = gsap.utils.toArray(".panel");
 
+
+
 let scrollTween = gsap.to(sections, {
-  xPercent: -100 *(sections.length - 1),
+  xPercent: -120 *(sections.length - 1),
   ease: "none",
   scrollTrigger: {
     trigger:".container",
     pin: true,
     scrub: 0.1,
-    end: "right left"
+    start: "top+=100 center",
+    end: "+=2000",
+    anticipatePin:1
   } 
 });
 
@@ -40,14 +44,14 @@ gsap.to(".box-3", {
 gsap.set("#tank", {x: window.innerWidth});
 
 gsap.to("#tank", {
-  x: -300, // How far left you want it to move (negative values move left)
+  x: -2 * window.innerWidth, // How far left you want it to move (negative values move left)
   ease: "none",
   scrollTrigger: {
     trigger: ".container", 
     containerAnimation: scrollTween,
-    start: "left right", 
-    end: "right left",
-    scrub: true,
+    start: "left 80%", 
+    end:"right -50%"
+    
   }
 });
 
@@ -84,14 +88,14 @@ ScrollTrigger.create({
 
 gsap.set(".gsap-marker-start, .gsap-marker-end, .gsap-marker-scroller-start, .gsap-marker-scroller-end", {autoAlpha: 0});
 
-["red","gray","purple","green"].forEach((triggerClass , i) =>{
+["green"].forEach((triggerClass , i) =>{
   ScrollTrigger.create({
     trigger: "." + triggerClass,
     containerAnimation: scrollTween,
-    start: "left 30%",
-    end: i=== 3 ? "right right": "right 60%",
+    start: "left 90%",
+    end: i=== 3 ? "right -20%" : "right 0%",
     markers: false, 
-    onToggle: self => gsap.to(".marker-" + (i+1), {duration: 0.25,
+    onToggle: self => gsap.to(".marker-" + (i+1), {duration: 1.5,
       autoAlpha: self.isActive ? 1 : 0
     })
   });
