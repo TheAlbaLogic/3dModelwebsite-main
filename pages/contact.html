@@ -15,20 +15,22 @@
 <body id="top">
   <header class="page-header">
     <div class="header-content">
-      <img src="../images/logo.png" alt="Logo of company" class="page-logo">
 
-      <nav class="page-navigation">
-        <ul class="navigation-list">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="/france.html">France</a></li>
-          <li><a href="/Germany.html">Germany</a></li>
-          <li><a href="japan.html">Japan</a></li>
-          <li><a href="/uk.html">UK</a></li>
-          <li><a href="/usa.html">USA</a></li>
-          <li><a href="/ussr.html">USSR</a></li>
-          <li><a href="/comparison.html">Comparison</a></li>
-        </ul>
-      </nav>
+      <div id="myNav" class="overlay">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <div class="overlay-content">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/Germany.html">Germany</a></li>
+            <li><a href="/uk.html">UK</a></li>
+            <li><a href="/usa.html">USA</a></li>
+            <li><a href="/ussr.html">USSR</a></li>
+          </ul>
+        </div>
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
     </div>
   </header>
 
@@ -38,14 +40,14 @@
     <section class="content-section">
       <h2> Get in touch </h2>
 
-      <form action="ThankYou.html">
-        <label>Full Name</label>
-        <input type="text" placeholder="Please enter your full name" required>
+      <form class="form" action="ThankYou.html">
+        <label >Full Name</label>
+        <input class="nameField"  type="text" placeholder="Please enter your full name" required>
 
         <label>Email Address</label>
-        <input type="email" placeholder="Please enter your Email address" required>
+        <input class="emailField" type="email" placeholder="Please enter your Email address" required>
 
-        <label>Your Message</label>
+        <label class="userMsg">Your Message</label>
         <textarea></textarea>
 
         <input type="submit" value="Send Message" class="btn-submit">
@@ -56,16 +58,20 @@
 
   <footer class="page-footer">
     <div class="footer-content">
-      <a href="#top">Back to the Top</a>
+     
 
-      <p>LOGO &copy;2020</p>
+     
 
       <ul class="footer-links">
-        <li><a href="#"> Privacy Policy</a></li>
-        <li><a href="#"> Site Map</a></li>
+       
+        
+        <li><a href="/index.html"> Home </a></li>
+        <li><a href="credits.html"> Credits </a></li>
+        <li><a href="History.html"> History of Tanks </a></li>
       </ul>
     </div>
   </footer>
+
 </body>
 
 </html>

@@ -1,0 +1,1 @@
+The information in this website was helped written with Grammarly but modified and checked by its developer Brandon (Myself).
