@@ -60,7 +60,12 @@ h2{
     
 }
 
-
+.heroBanner{
+  width: 600px;
+  height: 300px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
 
 .page-navigation{
     display: flex;
@@ -284,6 +289,16 @@ ul {
     text-align: left;
     padding-left: 20px;
     line-height: 2rem;
+}
+.ammolist {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-30%);
+  width: 25%;
+  text-align: left;
+  padding-left: 20px;
+ 
 }
 
 .Ltext {
