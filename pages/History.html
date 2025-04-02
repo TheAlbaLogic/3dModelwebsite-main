@@ -1,67 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History of Tanks</title>
 
- 
- <!DOCTYPE html>
- <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <script type="module" src="/js/main.js"></script>
- </head>
- <body id="top">
-    <header class="page-header">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/overlay.js"></script>
   
-        <nav class="page-navigation">
-          <ul class="navigation-list">
+  <script type="module" src="/js/parallax.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
+
+
+</head>
+
+<body id="top">
+  <header class="page-header">
+    <div class="header-content">
+
+      <div id="myNav" class="overlay">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <div class="overlay-content">
+          <ul>
             <li><a href="/index.html">Home</a></li>
             <li><a href="/Germany.html">Germany</a></li>
             <li><a href="/uk.html">UK</a></li>
             <li><a href="/usa.html">USA</a></li>
             <li><a href="/ussr.html">USSR</a></li>
-           
           </ul>
-        </nav>
-     
-    </header>
-              
-    <!-- <div id="container3D"><h1>Move me</h1></div> -->
-  
-    <section class="contetnt-selection">
-  
-      
-  
-      
-  
-      <h2>Interwar</h2>
-        <p>The Renault R35 was a French light tank used during World War II armed with a 37mm gun and machine gun.</p>
-  
-        
-  
-        <p>The FCM 36 was a French light infantry tank designed in the 1930s. It was armed with a 37mm gun and had a crew of two. Few were produced and they saw limited action in World War II.</p>
-  
-        
-  
-        <p>The Char D1 was a French medium tank developed in the 1920s and 1930s. It was armed with a 47mm gun and saw limited action in World War II.</p>
-  
-        
-  
-        <p> The AMC 35 was a French medium tank developed in the 1930s. It was armed with a 47mm gun and saw limited action in World War II.</p>
-  
-        
-  
-        <p>
-          The Somua S35 was a French medium tank designed in the late 1930s. It was armed with a 47mm gun and was considered one of the best French tanks of World War II.
-        </p>
-  
-  
-        <p>The Char 2C was a French super-heavy tank developed in World War I and produced in the 1920s. It was armed with multiple guns and saw limited action in World War II. </p>
-      
+        </div>
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+    </div>
+  </header>
 
+
+  <section class="heroBanner">
+
+    <img src="/images/heroBanner.png" alt="cromwell tank" class="heroImage">
+
+    <div class="pos">
+      
+    <h3> History of Tanks</h3>
+
+    <p class="herotext">  Want to view the tanks?  </p>
+
+   <a href="/index.html"> <button type="button" class="viewTanks"> View Tanks!</button></a>
+  </div>
+
+  </section>
+
+
+              
+    
   
+  <div class="container">
+      
+    <div class="panel blue">
+      
+    </div>
+    
+    <section class="panel red">
+      <div>
+      <pre class="code-block prettyprint lang-js linenums">
+
+
+      </div>
+      <div class="box-1"></div>
     </section>
+    
+    <section class="panel gray">
+      <div>
+        <div id="tank" class="tank">
+          <img src="/images/Tiger.png" alt="Tiger Tank" width="800px" height="600px">
+         </div>
+
+      <pre class="code-block prettyprint lang-js linenums">
+  </div>
+      <div class="box-2 "></div>
+    </section>
+    <section class="panel purple">
+      <div>
+        <h2> Pre-War Tanks</h2>
+        <p> The first sign of a tank was at the battle of the somme with the british Mark IV Tank </p>
+
+
+      <pre class="code-block prettyprint lang-js linenums">
+      </div>
+      <div class="box-3"></div>
+    </section>
+    <section class="panel green">
+      <div>
+
+
+
+        
+
+      </div>
+    </section>
+
+  </div>
   
+
   
 
   </body>
@@ -73,11 +117,12 @@
 
       <ul class="footer-links">
        
-        <li><a href="#"> Sitemap</a></li>
-        <li><a href="#"> Contact us </a></li>
-        <li><a href="#"> Credits </a></li>
-        <li><a href="#"> History of Tanks </a></li>
+        
+        <li><a href="contact.html"> Contact us </a></li>
+        <li><a href="credits.html"> Credits </a></li>
+        <li><a href="History.html"> History of Tanks </a></li>
       </ul>
     </div>
   </footer>
+
   </html>
