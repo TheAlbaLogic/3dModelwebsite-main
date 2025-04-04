@@ -8,10 +8,10 @@
 
   <link rel="stylesheet" href="/css/style.css">
   <script src="/js/overlay.js"></script>
-  
+
   <script type="module" src="/js/parallax.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
 
 
 </head>
@@ -20,6 +20,7 @@
   <header class="page-header">
     <div class="header-content">
 
+      <img src="/images/LOGOBIG.png" alt="Full sized logo" class="logoBig">
       <div id="myNav" class="overlay">
 
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -44,85 +45,136 @@
     <img src="/images/heroBanner.png" alt="cromwell tank" class="heroImage">
 
     <div class="pos">
-      
-    <h3> History of Tanks</h3>
 
-    <p class="herotext">  Want to view the tanks?  </p>
+      <h3> History of Tanks</h3>
 
-   <a href="/index.html"> <button type="button" class="viewTanks"> View Tanks!</button></a>
-  </div>
+      <p class="herotext"> Want to view the tanks? </p>
+
+      <a href="/index.html"> <button type="button" class="viewTanks"> View Tanks!</button></a>
+    </div>
 
   </section>
 
 
-              
-    
-  
+
+<!-- this creates the parallax scroll animation by activating it on certian id's and sections -->
   <div class="container">
-      
-    <div class="panel blue">
-      
-    </div>
-    
+
+    <section class="panel blue">
+
+      <div class="ww2text">
+        <h2> Pre-War Tanks</h2>
+        <p> Before World War II, tanks evolved from early 20th-century innovations, initially developed during World War
+          I by the British and French to break the stalemate of trench warfare. Early models like the British Mark I and
+          French Renault FT were slow but showed the potential of armored vehicles in battles like the Somme.
+
+          In the interwar period, tank design advanced with improved speed, armor, and firepower. Germany, the Soviet
+          Union, and the UK refined their tanks, such as the German Panzer I and II and Soviet T-26, setting the stage
+          for mass tank deployment in WWII.
+
+          After WWII, tank warfare continued to evolve, as seen in the Soviet-Polish War, where tanks played a secondary
+          role to Polish cavalry despite limited tank-on-tank battles.</p>
+      </div>
+    </section>
+
+
     <section class="panel red">
-      <div>
-      <pre class="code-block prettyprint lang-js linenums">
+      <div class="ww2text">
 
+        <h2> WW2 Tanks</h2>
+        <p> World War II tanks were faster, better armed, and more protected than previous models, with each country
+          developing tanks suited to their strategies. The German Panzer series, including the Panzer IV and Panther,
+          were key to Blitzkrieg. The Soviet T-34, with sloped armor and a 76.2mm gun, was highly mobile. The American
+          M4 Sherman was reliable and versatile, while the British Churchill and Matilda, though slow, had heavy armor.
 
+          Tanks also aided infantry, breached defenses, and served in anti-aircraft roles. This era saw the rise of
+          combined arms tactics, with tanks working alongside infantry, artillery, and air support. </p>
+
+   
       </div>
       <div class="box-1"></div>
     </section>
-    
+
+
+
     <section class="panel gray">
       <div>
-        <div id="tank" class="tank">
-          <img src="/images/Tiger.png" alt="Tiger Tank" width="800px" height="600px">
-         </div>
 
-      <pre class="code-block prettyprint lang-js linenums">
-  </div>
+
+      </div>
       <div class="box-2 "></div>
     </section>
+
+
     <section class="panel purple">
-      <div>
-        <h2> Pre-War Tanks</h2>
-        <p> The first sign of a tank was at the battle of the somme with the british Mark IV Tank </p>
+      <div class="ww2text">
+        <h2> Modern Tanks</h2>
+        <p> Cold War and modern tanks represent advanced armored vehicles with enhanced firepower, mobility, and
+          technology. NATO's M1 Abrams and the Soviet T-90 are examples, with the M1 Abrams featuring a gas turbine
+          engine, composite armor, and advanced targeting systems. Soviet tanks like the T-72 and T-80 emphasized
+          firepower and ease of production.
 
+          Modern tanks focus on lethality, survivability, and versatility, with advanced armor, fire control systems,
+          and electronics like night vision and GPS. They also prioritize mobility with powerful engines and
+          sophisticated suspensions for diverse environments. </p>
 
-      <pre class="code-block prettyprint lang-js linenums">
       </div>
       <div class="box-3"></div>
     </section>
+
+
     <section class="panel green">
       <div>
 
-
-
-        
+        <div id="tank" class="tank">
+          <img src="/images/TankScroll.png" alt="Tiger Tank" width="800px" height="600px">
+         </div>
 
       </div>
     </section>
 
   </div>
-  
 
-  
 
-  </body>
-  <footer class="page-footer">
-    <div class="footer-content">
-     
+  <section id="container">
 
-     
 
-      <ul class="footer-links">
-       
-        
-        <li><a href="contact.html"> Contact us </a></li>
-        <li><a href="credits.html"> Credits </a></li>
-        <li><a href="History.html"> History of Tanks </a></li>
-      </ul>
+    <div class="parallax-layer layer1">
+
+
+      <img class="Ltext" src="/images/Mark4.jpg">  <p class="Ltextsub">Mark 4 British WW1 Tank</p>
+
+
+      <img class="Ttext" src="/images/Abrams-transparent.png"> <p class="Ttextsub">Abrams modern American tank</p> 
+
     </div>
-  </footer>
 
-  </html>
+
+
+    <img class="parallax-layer layer3" src="/images/M4ShermanFront.png" alt="Front facing Sherman"> <p class="Tanktextsub">M4 Sherman American tank</p> 
+
+
+
+
+
+  </section>
+
+
+</body>
+<footer class="page-footer">
+  <div class="footer-content">
+
+
+
+
+    <ul class="footer-links">
+
+
+      <li><a href="contact.html"> Contact us </a></li>
+      <li><a href="credits.html"> Credits </a></li>
+      <li><a href="History.html"> History of Tanks </a></li>
+    </ul>
+  </div>
+</footer>
+
+</html>

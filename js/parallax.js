@@ -14,7 +14,7 @@ let sections = gsap.utils.toArray(".panel");
 
 
 let scrollTween = gsap.to(sections, {
-  xPercent: -120 *(sections.length - 1),
+  xPercent: -170 *(sections.length - 1),
   ease: "none",
   scrollTrigger: {
     trigger:".container",
@@ -25,6 +25,50 @@ let scrollTween = gsap.to(sections, {
     anticipatePin:1
   } 
 });
+
+
+gsap.to(".ww2text", {
+  x: "-15%", // A smaller movement value
+  ease: "power1.inOut", // A smoother ease function
+  scrollTrigger: {
+    trigger: ".ww2text",
+    containerAnimation: scrollTween,
+    start: "left right",
+    end: "right left",
+    scrub: 0.5 // Higher value makes it move slower (more lag)
+  }
+});
+
+sections.forEach((section) => {
+  // Select text within each panel section
+  let text = section.querySelector(".ww2text");
+  
+  if (text) {
+    gsap.to(text, {
+      x: "25%", // Text moves slower than the section
+      ease: "none",
+      scrollTrigger: {
+        trigger: section,
+        containerAnimation: scrollTween,
+        start: "left right",
+        end: "right left",
+        scrub: true
+      }
+    });
+  }
+});
+
+gsap.to(".ww2text", {
+  xPercent: -60 * (sections.length - 1), // Half the speed of main animation
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".container",
+    start: "top+=100 center",
+    end: "+=2000",
+    scrub: 0.2 
+  }
+});
+
 
 gsap.set(".box-3", {x: window.innerWidth});
 
@@ -73,22 +117,25 @@ ScrollTrigger.create({
 },{
   trigger:".green",
   containerAnimation: scrollTween,
-  start: "left right",
-  end: "right left",
-  scrub:true, 
-  onEnter: () => console.log("enter"),
-  onLeave: () => console.log("leave"),
-  onEnterBack: () => console.log("enterBack"),
-  onLeaveBack:() => console.log("leaveback"),
-  onToggle: self => console.log("active", self.isActive),
-  id:"4"
+  start: "top center",
+  end: "bottom center",
+  markers: true, // This will show visible markers for debugging
+  onEnter: () => {
+
+    console.log("Tank is moving");
+    gsap.to("#tank", {
+      duration: 1,
+      opacity: 1,
+      x: 0
+    });
+  }
 });
 
 
 
 gsap.set(".gsap-marker-start, .gsap-marker-end, .gsap-marker-scroller-start, .gsap-marker-scroller-end", {autoAlpha: 0});
 
-["green"].forEach((triggerClass , i) =>{
+["green,red,blue,purple"].forEach((triggerClass , i) =>{
   ScrollTrigger.create({
     trigger: "." + triggerClass,
     containerAnimation: scrollTween,
@@ -100,5 +147,4 @@ gsap.set(".gsap-marker-start, .gsap-marker-end, .gsap-marker-scroller-start, .gs
     })
   });
 });
-
 
