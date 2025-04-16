@@ -33,7 +33,7 @@ function currentSlide(n) {
 //Automatic Slideshow
 
 let slideIndex = 0;
-showSlides();
+
 
 function showSlides() {
   let i;
@@ -65,7 +65,7 @@ function showSlides() {
     dots[slideIndex - 1].className += " active";
   }
 
-  setTimeout(showSlides, 5000); // Change image every 5 seconds
+  setTimeout(showSlides, 2500); // Change image every 5 seconds
 
   console.log(slideIndex);
 }
